@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Portal MBG</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#0f172a,#1e3a8a,#2563eb);
+min-height:100vh;
+display:flex;
+justify-content:center;
+padding:30px;
+}
+
+.container{
+width:100%;
+max-width:700px;
+}
+
+.card{
+
+background:white;
+border-radius:25px;
+padding:30px;
+box-shadow:0 20px 40px rgba(0,0,0,.25);
+
+}
+
+.logo{
+
+width:90px;
+height:90px;
+background:#2563eb;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+margin:auto;
+font-size:40px;
+color:white;
+
+}
+
+h1{
+
+text-align:center;
+margin-top:15px;
+font-size:30px;
+color:#1e3a8a;
+
+}
+
+.subtitle{
+
+text-align:center;
+color:#666;
+margin-bottom:25px;
+
+}
+
+#search{
+
+width:100%;
+padding:14px;
+border-radius:12px;
+border:2px solid #ddd;
+font-size:16px;
+margin-bottom:25px;
+
+}
+
+.menu{
+
+display:flex;
+flex-direction:column;
+gap:14px;
+
+}
+
+.menu a{
+
+text-decoration:none;
+background:#2563eb;
+color:white;
+padding:16px;
+border-radius:12px;
+font-size:17px;
+transition:.25s;
+display:flex;
+align-items:center;
+justify-content:space-between;
+
+}
+
+.menu a:hover{
+
+transform:translateY(-3px);
+background:#1d4ed8;
+
+}
+
+footer{
+
+margin-top:30px;
+text-align:center;
+color:#777;
+font-size:14px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="card">
+
+<div class="logo">
+🍱
+</div>
+
+<h1>Portal MBG</h1>
+
+<div class="subtitle">
+
+SPPG Karangwaru 2
+
+</div>
+
+<input type="text" id="search" placeholder="🔍 Cari Menu...">
+
+<div class="menu" id="menu">
+
+<a href="https://google.com" target="_blank">
+📋 Absensi
+<span>➜</span>
+</a>
+
+<a href="https://google.com" target="_blank">
+📊 Laporan Harian
+<span>➜</span>
+</a>
+
+<a href="https://google.com" target="_blank">
+🍱 Dashboard Produksi
+<span>➜</span>
+</a>
+
+<a href="https://google.com" target="_blank">
+🚚 Distribusi
+<span>➜</span>
+</a>
+
+<a href="https://google.com" target="_blank">
+💰 Insentif
+<span>➜</span>
+</a>
+
+<a href="https://google.com" target="_blank">
+📑 Berita Acara
+<span>➜</span>
+</a>
+
+<a href="https://drive.google.com" target="_blank">
+📂 Google Drive
+<span>➜</span>
+</a>
+
+<a href="https://mail.google.com" target="_blank">
+📧 Gmail
+<span>➜</span>
+</a>
+
+<a href="https://web.whatsapp.com" target="_blank">
+💬 WhatsApp
+<span>➜</span>
+</a>
+
+<a href="https://maps.google.com" target="_blank">
+📍 Google Maps
+<span>➜</span>
+</a>
+
+</div>
+
+<footer>
+
+© 2026 Portal MBG
+
+</footer>
+
+</div>
+
+</div>
+
+<script>
+
+const search=document.getElementById("search");
+
+search.addEventListener("keyup",function(){
+
+let value=this.value.toLowerCase();
+
+let menu=document.querySelectorAll("#menu a");
+
+menu.forEach(function(item){
+
+if(item.innerText.toLowerCase().indexOf(value)>-1){
+
+item.style.display="flex";
+
+}else{
+
+item.style.display="none";
+
+}
+
+});
+
+});
+
+</script>
+
+</body>
+</html>
