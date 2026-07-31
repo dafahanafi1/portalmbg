@@ -21,7 +21,7 @@ Portal MBG SPPG Karangwaru 2
 <div class="container">
 
 
-<img class="logo" src="logo.png">
+<img class="logo" src="logo.png" alt="Logo BGN">
 
 
 <h1>
@@ -39,6 +39,8 @@ by : SPPG Plupuh Karangwaru 2
 </p>
 
 
+
+<!-- JAM DIGITAL -->
 
 <div id="clock">
 00:00:00
@@ -108,42 +110,66 @@ SIPP BPJS Ketenagakerjaan
 
 
 
+<!-- QRIS -->
+
 <div class="qris">
 
+
 <h3>
-QRIS
+QRIS Dukungan SPPG
 </h3>
 
-<img src="qris.png">
+
+<p>
+Partisipasi dan dukungan untuk kelancaran kegiatan
+SPPG Karangwaru 2 dapat disalurkan melalui QRIS berikut.
+</p>
+
+
+<img src="qris.png" alt="QRIS SPPG Karangwaru 2">
+
+
+<p>
+Terima kasih atas setiap bentuk dukungan dan kepedulian.
+Bersama mendukung pelayanan gizi yang lebih baik.
+</p>
+
 
 </div>
 
 
 
 <div class="footer">
+
 #DHAF
+
 </div>
 
 
+
 </div>
+
 
 
 
 <script>
 
+
 function updateClock(){
 
-    let sekarang = new Date();
-
-    let jam = String(sekarang.getHours()).padStart(2,"0");
-
-    let menit = String(sekarang.getMinutes()).padStart(2,"0");
-
-    let detik = String(sekarang.getSeconds()).padStart(2,"0");
+let waktu = new Date();
 
 
-    document.getElementById("clock").innerHTML =
-    jam + ":" + menit + ":" + detik;
+let jam = String(waktu.getHours()).padStart(2,"0");
+
+let menit = String(waktu.getMinutes()).padStart(2,"0");
+
+let detik = String(waktu.getSeconds()).padStart(2,"0");
+
+
+document.getElementById("clock").innerHTML =
+jam + ":" + menit + ":" + detik;
+
 
 }
 
@@ -154,6 +180,7 @@ setInterval(updateClock,1000);
 
 
 </script>
+
 
 
 </body>
