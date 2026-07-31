@@ -1,169 +1,188 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
+body {
 
+    font-family: Arial, Helvetica, sans-serif;
 
-body{
+    background: #f1f7f5;
 
-    font-family:Arial, Helvetica, sans-serif;
+    margin: 0;
 
-    background:#f5f5f5;
-
-    color:#333;
-
-}
-
-
-header{
-
-    text-align:center;
-
-    background:white;
-
-    padding:20px;
+    color: #333;
 
 }
 
 
 
-header img{
+center {
 
-    width:70px;
+    width: 100%;
 
-    height:70px;
+    display: block;
 
-    object-fit:contain;
-
-}
-
-
-
-header h1{
-
-    font-size:22px;
-
-    color:#00695c;
-
-    margin:10px 0;
+    padding: 25px 10px;
 
 }
 
 
 
-header p{
+/* LOGO BGN */
 
-    font-size:14px;
+img[src="logo.png"] {
 
-}
+    width: 140px;
 
+    height: 140px;
 
+    object-fit: contain;
 
-main{
-
-    width:100%;
-
-    max-width:500px;
-
-    margin:auto;
-
-    padding:20px;
+    margin-top: 10px;
 
 }
 
 
 
-h2{
+/* JUDUL */
 
-    text-align:center;
+h1 {
 
-    font-size:18px;
+    color: #00695c;
 
-    margin:20px 0;
+    font-size: 28px;
 
-}
-
-
-
-.menu{
-
-    display:flex;
-
-    flex-direction:column;
-
-    gap:12px;
+    margin: 15px 0 5px;
 
 }
 
 
 
-.menu a{
+h3 {
 
-    display:block;
-
-    width:100%;
-
-    padding:15px;
-
-    background:white;
-
-    border-radius:10px;
-
-    text-align:center;
-
-    text-decoration:none;
-
-    color:#00695c;
-
-    font-weight:bold;
-
-    box-shadow:0 2px 8px rgba(0,0,0,.1);
+    color: #00695c;
 
 }
 
 
 
-.menu a:hover{
+p {
 
-    background:#00695c;
-
-    color:white;
+    margin: 10px;
 
 }
 
 
 
-.qris{
+/* MENU PORTAL */
 
-    text-align:center;
+a {
 
-    margin-top:30px;
+    display: block;
+
+    max-width: 420px;
+
+    margin: 12px auto;
+
+    padding: 15px;
+
+    background: white;
+
+    border-radius: 12px;
+
+    text-decoration: none;
+
+    color: #00695c;
+
+    font-weight: bold;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.10);
+
+    transition: 0.3s;
 
 }
 
 
 
-.qris img{
+a:hover {
 
-    width:200px;
+    background: #00695c;
 
-    max-width:90%;
+    color: white;
+
+    transform: translateY(-3px);
 
 }
 
 
 
-footer{
+/* PEMBATAS */
 
-    text-align:center;
+hr {
 
-    padding:15px;
+    max-width: 450px;
 
-    margin-top:20px;
+    border: 0;
 
-    background:#00695c;
+    border-top: 1px solid #ddd;
 
-    color:white;
+    margin: 25px auto;
+
+}
+
+
+
+/* QRIS */
+
+img[src="qris.png"] {
+
+    width: 220px;
+
+    max-width: 90%;
+
+    background: white;
+
+    padding: 10px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,.15);
+
+}
+
+
+
+/* FOOTER / DHAF */
+
+body > center {
+
+    min-height: 100vh;
+
+}
+
+
+
+/* HP */
+
+@media(max-width:600px){
+
+
+    img[src="logo.png"] {
+
+        width: 120px;
+
+        height: 120px;
+
+    }
+
+
+    h1 {
+
+        font-size: 22px;
+
+    }
+
+
+    a {
+
+        width: 85%;
+
+    }
 
 }
