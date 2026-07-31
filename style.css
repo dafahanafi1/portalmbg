@@ -1,216 +1,55 @@
-:root{
-    --primary:#0b5ed7;
-    --primary2:#4da3ff;
-    --white:#ffffff;
-    --glass:rgba(255,255,255,.15);
-}
-
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:'Poppins',sans-serif;
 }
 
 body{
-    background:linear-gradient(135deg,#0b5ed7,#1e88ff,#7ab8ff);
-    min-height:100vh;
+    font-family:Arial, sans-serif;
 }
 
-.portal-card{
-    background:rgba(255,255,255,.15);
-    backdrop-filter:blur(15px);
-    border-radius:25px;
-    padding:35px;
-    box-shadow:0 20px 50px rgba(0,0,0,.2);
-}
 
-.logo{
-    width:120px;
-    margin-bottom:15px;
-}
-
-.title{
-    color:#fff;
-    font-size:42px;
-    font-weight:700;
-}
-
-.subtitle{
-    color:#eef6ff;
-    margin-top:10px;
-    margin-bottom:5px;
-}
-
-.creator{
-    color:#d8e8ff;
-    font-size:14px;
-}
-
-.search-box{
-    margin:30px 0;
-    background:#fff;
-    border-radius:50px;
-    display:flex;
-    align-items:center;
-    padding:0 18px;
-    height:58px;
-}
-
-.search-box i{
-    color:#0b5ed7;
-    font-size:20px;
-}
-
-.search-box input{
-    flex:1;
-    border:none;
-    outline:none;
-    padding-left:15px;
-    font-size:16px;
-    background:none;
-}
-
-.menu-card{
+header{
+    width:100%;
     display:flex;
     justify-content:space-between;
     align-items:center;
-    background:#fff;
-    border-radius:18px;
-    padding:18px 20px;
-    margin-bottom:16px;
-    text-decoration:none;
-    color:#123;
-    transition:.25s;
-    box-shadow:0 10px 25px rgba(0,0,0,.10);
+    padding:15px 30px;
+    background:#ffffff;
+    border-bottom:1px solid #ddd;
 }
 
-.menu-card:hover{
-    transform:translateY(-4px);
-    text-decoration:none;
-    color:#0b5ed7;
-}
-
-.menu-left{
-    display:flex;
-    align-items:center;
-    gap:15px;
-}
-
-.icon{
-    width:52px;
-    height:52px;
-    border-radius:14px;
-    background:#eaf3ff;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    color:#0b5ed7;
-    font-size:22px;
-}
-
-.menu-title{
-    font-weight:600;
-    font-size:16px;
-    line-height:1.4;
-}
-
-.arrow{
-    color:#0b5ed7;
-    font-size:20px;
-}
-
-.footer{
-    text-align:center;
-    color:#fff;
-    margin-top:25px;
-}
-
-.donasi-card,
-.jumlah-card{
-    background:#fff;
-    border-radius:22px;
-    padding:25px;
-    text-align:center;
-    box-shadow:0 15px 35px rgba(0,0,0,.15);
-    margin-bottom:20px;
-}
-
-.qris{
-    width:170px;
-    display:block;
-    margin:20px auto;
-    border-radius:15px;
-}
-
-#popup{
-    display:none;
-    position:fixed;
-    inset:0;
-    background:rgba(0,0,0,.75);
-    justify-content:center;
-    align-items:center;
-    z-index:9999;
-}
-
-.popup-box{
-    background:#fff;
-    border-radius:20px;
-    padding:25px;
-    width:350px;
-    max-width:92%;
-    text-align:center;
-    position:relative;
-}
-
-.popup-box img{
-    width:240px;
-    margin:20px auto;
-    display:block;
-}
-
-#closePopup{
-    position:absolute;
-    right:15px;
-    top:10px;
-    font-size:28px;
-    cursor:pointer;
-}
-
-@media(max-width:991px){
-
-.donasi-card,
-.jumlah-card{
-    margin-top:20px;
-}
-
-.qris{
-    width:150px;
-}
 
 .logo{
-    width:90px;
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-size:20px;
+    font-weight:bold;
 }
 
-.title{
-    font-size:30px;
+
+.logo img{
+    width:50px;
+    height:50px;
+    object-fit:contain;
 }
 
-.portal-card{
-    padding:22px;
+
+nav{
+    display:flex;
+    gap:25px;
 }
 
-.menu-card{
-    padding:15px;
+
+nav a{
+    text-decoration:none;
+    color:#333;
+    font-weight:bold;
 }
 
-.icon{
-    width:45px;
-    height:45px;
-}
 
-.menu-title{
-    font-size:15px;
-}
-
+main{
+    padding:50px;
+    text-align:center;
 }
