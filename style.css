@@ -1,8 +1,11 @@
 *{
+
 margin:0;
 padding:0;
 box-sizing:border-box;
+
 }
+
 
 
 body{
@@ -21,9 +24,13 @@ max-width:520px;
 
 margin:auto;
 
-text-align:center;
+background:white;
+
+min-height:100vh;
 
 padding:25px 15px;
+
+text-align:center;
 
 }
 
@@ -37,8 +44,6 @@ height:160px;
 
 object-fit:contain;
 
-margin-bottom:10px;
-
 }
 
 
@@ -47,9 +52,9 @@ h1{
 
 color:#00695c;
 
-font-size:28px;
+margin:15px 0 5px;
 
-margin:10px;
+font-size:28px;
 
 }
 
@@ -79,10 +84,6 @@ line-height:1.5;
 
 display:inline-block;
 
-margin:20px;
-
-padding:12px 30px;
-
 background:#00695c;
 
 color:white;
@@ -91,9 +92,11 @@ font-size:30px;
 
 font-weight:bold;
 
+padding:12px 30px;
+
 border-radius:15px;
 
-box-shadow:0 4px 12px rgba(0,0,0,.2);
+margin:20px;
 
 }
 
@@ -101,9 +104,11 @@ box-shadow:0 4px 12px rgba(0,0,0,.2);
 
 .menu a{
 
-display:block;
+display:flex;
 
-background:white;
+align-items:center;
+
+background:#f8ffff;
 
 color:#00695c;
 
@@ -111,13 +116,13 @@ text-decoration:none;
 
 font-weight:bold;
 
-padding:16px;
+padding:15px;
 
 margin:12px 0;
 
 border-radius:15px;
 
-box-shadow:0 4px 12px rgba(0,0,0,.15);
+box-shadow:0 4px 10px rgba(0,0,0,.12);
 
 transition:.3s;
 
@@ -137,17 +142,27 @@ transform:translateY(-3px);
 
 
 
+.menu span{
+
+font-size:26px;
+
+width:45px;
+
+}
+
+
+
 .qris{
 
-margin-top:40px;
+margin-top:35px;
 
-background:white;
+background:#f8ffff;
 
 padding:20px;
 
 border-radius:15px;
 
-box-shadow:0 4px 12px rgba(0,0,0,.15);
+box-shadow:0 4px 10px rgba(0,0,0,.12);
 
 }
 
@@ -158,6 +173,8 @@ box-shadow:0 4px 12px rgba(0,0,0,.15);
 width:230px;
 
 max-width:90%;
+
+margin:15px;
 
 }
 
@@ -172,7 +189,6 @@ font-weight:bold;
 color:#00695c;
 
 }
-
 
 
 @media(max-width:600px){
