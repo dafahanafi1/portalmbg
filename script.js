@@ -2,7 +2,6 @@ function updateClock(){
 
     let waktu = new Date();
 
-
     let jam = String(waktu.getHours()).padStart(2,"0");
 
     let menit = String(waktu.getMinutes()).padStart(2,"0");
@@ -16,7 +15,7 @@ function updateClock(){
 }
 
 
-setInterval(updateClock,1000);
-
-
 updateClock();
+
+
+setInterval(updateClock,1000);
