@@ -1,31 +1,28 @@
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
 
 body{
 
-    font-family:Arial, Helvetica, sans-serif;
+font-family:Arial, Helvetica, sans-serif;
 
-    background:#eaf5f2;
+background:#eaf5f2;
 
 }
 
 
-
 .container{
 
-    width:100%;
+max-width:500px;
 
-    max-width:500px;
+margin:auto;
 
-    margin:auto;
+text-align:center;
 
-    text-align:center;
-
-    padding:25px 15px;
+padding:25px 15px;
 
 }
 
@@ -33,13 +30,11 @@ body{
 
 .logo{
 
-    width:170px;
+width:150px;
 
-    height:170px;
+height:150px;
 
-    object-fit:contain;
-
-    margin-bottom:15px;
+object-fit:contain;
 
 }
 
@@ -47,11 +42,9 @@ body{
 
 h1{
 
-    color:#00695c;
+color:#00695c;
 
-    font-size:28px;
-
-    margin-bottom:10px;
+margin:15px 0;
 
 }
 
@@ -59,43 +52,72 @@ h1{
 
 h3{
 
-    color:#00695c;
+color:#00695c;
 
-    margin:10px;
+margin:10px;
+
+}
+
+
+
+p{
+
+color:#555;
+
+margin-bottom:15px;
 
 }
 
 
 
-.by{
+/* JAM DIGITAL */
 
-    color:#555;
+#clock{
 
-    margin-bottom:25px;
+display:inline-block;
+
+background:#00695c;
+
+color:white;
+
+font-size:30px;
+
+font-weight:bold;
+
+padding:12px 25px;
+
+border-radius:15px;
+
+margin:15px;
+
+box-shadow:0 4px 12px rgba(0,0,0,.2);
 
 }
 
+
+
+/* MENU */
 
 
 .menu a{
 
-    display:block;
+display:block;
 
-    background:white;
+background:white;
 
-    color:#00695c;
+color:#00695c;
 
-    text-decoration:none;
+text-decoration:none;
 
-    font-weight:bold;
+font-weight:bold;
 
-    padding:16px;
+padding:16px;
 
-    margin:12px 0;
+margin:12px 0;
 
-    border-radius:15px;
+border-radius:15px;
 
-    box-shadow:0 4px 12px rgba(0,0,0,.15);
+box-shadow:0 4px 12px rgba(0,0,0,.15);
 
 }
 
@@ -103,9 +125,9 @@ h3{
 
 .menu a:hover{
 
-    background:#00695c;
+background:#00695c;
 
-    color:white;
+color:white;
 
 }
 
@@ -113,7 +135,7 @@ h3{
 
 .qris{
 
-    margin-top:35px;
+margin-top:35px;
 
 }
 
@@ -121,17 +143,15 @@ h3{
 
 .qris img{
 
-    width:250px;
+width:230px;
 
-    max-width:90%;
+max-width:90%;
 
-    background:white;
+background:white;
 
-    padding:10px;
+padding:10px;
 
-    border-radius:15px;
-
-    box-shadow:0 4px 12px rgba(0,0,0,.15);
+border-radius:15px;
 
 }
 
@@ -139,31 +159,10 @@ h3{
 
 .footer{
 
-    margin-top:30px;
+margin-top:30px;
 
-    color:#00695c;
+font-weight:bold;
 
-    font-weight:bold;
-
-}
-
-
-
-@media(max-width:600px){
-
-.logo{
-
-    width:130px;
-
-    height:130px;
-
-}
-
-
-h1{
-
-    font-size:22px;
-
-}
+color:#00695c;
 
 }
