@@ -7,7 +7,7 @@ box-sizing:border-box;
 
 body{
 
-font-family:Arial, sans-serif;
+font-family:Arial, Helvetica, sans-serif;
 
 background:#eaf5f2;
 
@@ -17,7 +17,7 @@ background:#eaf5f2;
 
 .container{
 
-max-width:500px;
+max-width:520px;
 
 margin:auto;
 
@@ -31,11 +31,13 @@ padding:25px 15px;
 
 .logo{
 
-width:150px;
+width:160px;
 
-height:150px;
+height:160px;
 
 object-fit:contain;
+
+margin-bottom:10px;
 
 }
 
@@ -45,7 +47,9 @@ h1{
 
 color:#00695c;
 
-margin:15px 0;
+font-size:28px;
+
+margin:10px;
 
 }
 
@@ -54,6 +58,18 @@ margin:15px 0;
 h3{
 
 color:#00695c;
+
+margin:10px;
+
+}
+
+
+
+p{
+
+color:#555;
+
+line-height:1.5;
 
 }
 
@@ -77,6 +93,8 @@ font-weight:bold;
 
 border-radius:15px;
 
+box-shadow:0 4px 12px rgba(0,0,0,.2);
+
 }
 
 
@@ -99,7 +117,9 @@ margin:12px 0;
 
 border-radius:15px;
 
-box-shadow:0 4px 10px rgba(0,0,0,.15);
+box-shadow:0 4px 12px rgba(0,0,0,.15);
+
+transition:.3s;
 
 }
 
@@ -111,13 +131,23 @@ background:#00695c;
 
 color:white;
 
+transform:translateY(-3px);
+
 }
 
 
 
 .qris{
 
-margin-top:35px;
+margin-top:40px;
+
+background:white;
+
+padding:20px;
+
+border-radius:15px;
+
+box-shadow:0 4px 12px rgba(0,0,0,.15);
 
 }
 
@@ -126,6 +156,8 @@ margin-top:35px;
 .qris img{
 
 width:230px;
+
+max-width:90%;
 
 }
 
@@ -138,5 +170,26 @@ margin-top:30px;
 font-weight:bold;
 
 color:#00695c;
+
+}
+
+
+
+@media(max-width:600px){
+
+.logo{
+
+width:130px;
+
+height:130px;
+
+}
+
+
+h1{
+
+font-size:22px;
+
+}
 
 }
