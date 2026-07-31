@@ -1,92 +1,169 @@
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
 
 body{
-font-family:Arial, sans-serif;
-background:#f5f7f7;
-color:#333;
+
+    font-family:Arial, Helvetica, sans-serif;
+
+    background:#f5f5f5;
+
+    color:#333;
+
 }
 
 
 header{
-background:white;
-text-align:center;
-padding:30px;
-box-shadow:0 2px 8px #ddd;
+
+    text-align:center;
+
+    background:white;
+
+    padding:20px;
+
 }
+
 
 
 header img{
-width:120px;
-height:120px;
-object-fit:contain;
+
+    width:70px;
+
+    height:70px;
+
+    object-fit:contain;
+
 }
 
 
-h1{
-color:#00695c;
-margin:15px;
+
+header h1{
+
+    font-size:22px;
+
+    color:#00695c;
+
+    margin:10px 0;
+
 }
+
+
+
+header p{
+
+    font-size:14px;
+
+}
+
 
 
 main{
-max-width:1000px;
-margin:auto;
-padding:30px 15px;
+
+    width:100%;
+
+    max-width:500px;
+
+    margin:auto;
+
+    padding:20px;
+
 }
+
 
 
 h2{
-text-align:center;
-margin:20px;
+
+    text-align:center;
+
+    font-size:18px;
+
+    margin:20px 0;
+
 }
+
 
 
 .menu{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:12px;
+
 }
+
 
 
 .menu a{
-background:white;
-padding:20px;
-border-radius:15px;
-text-align:center;
-text-decoration:none;
-font-weight:bold;
-color:#00695c;
-box-shadow:0 4px 10px #ddd;
+
+    display:block;
+
+    width:100%;
+
+    padding:15px;
+
+    background:white;
+
+    border-radius:10px;
+
+    text-align:center;
+
+    text-decoration:none;
+
+    color:#00695c;
+
+    font-weight:bold;
+
+    box-shadow:0 2px 8px rgba(0,0,0,.1);
+
 }
+
 
 
 .menu a:hover{
-background:#00695c;
-color:white;
+
+    background:#00695c;
+
+    color:white;
+
 }
+
 
 
 .qris{
-text-align:center;
-margin-top:40px;
+
+    text-align:center;
+
+    margin-top:30px;
+
 }
+
 
 
 .qris img{
-width:250px;
-max-width:90%;
+
+    width:200px;
+
+    max-width:90%;
+
 }
 
 
+
 footer{
-margin-top:30px;
-padding:20px;
-background:#00695c;
-color:white;
-text-align:center;
+
+    text-align:center;
+
+    padding:15px;
+
+    margin-top:20px;
+
+    background:#00695c;
+
+    color:white;
+
 }
