@@ -1,1 +1,1 @@
-console.log("Portal MBG Aktif");
+console.log("Portal MBG aktif");
