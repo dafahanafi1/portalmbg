@@ -1,7 +1,9 @@
 *{
+
 margin:0;
 padding:0;
 box-sizing:border-box;
+
 }
 
 
@@ -21,7 +23,7 @@ max-width:520px;
 
 margin:auto;
 
-background:#ffffff;
+background:white;
 
 min-height:100vh;
 
@@ -35,11 +37,13 @@ text-align:center;
 
 .logo{
 
-width:150px;
+width:100px;
 
-height:150px;
+height:100px;
 
 object-fit:contain;
+
+margin-bottom:10px;
 
 }
 
@@ -49,13 +53,23 @@ h1{
 
 color:#0066b3;
 
+font-size:26px;
+
 }
 
 
 
 h3{
 
-color:#00549b;
+color:#0066b3;
+
+}
+
+
+
+p{
+
+color:#555;
 
 }
 
@@ -63,19 +77,19 @@ color:#00549b;
 
 #clock{
 
+display:inline-block;
+
 background:#0066b3;
 
 color:white;
 
-display:inline-block;
+font-size:30px;
+
+font-weight:bold;
 
 padding:12px 30px;
 
 border-radius:20px;
-
-font-size:30px;
-
-font-weight:bold;
 
 margin:20px;
 
@@ -104,7 +118,9 @@ color:#333;
 
 font-weight:bold;
 
-box-shadow:0 5px 12px rgba(0,0,0,.15);
+text-align:left;
+
+box-shadow:0 4px 12px rgba(0,0,0,.15);
 
 }
 
@@ -206,6 +222,8 @@ box-shadow:0 5px 15px rgba(0,0,0,.15);
 .qris img{
 
 width:230px;
+
+margin:15px;
 
 }
 
