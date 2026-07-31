@@ -1,18 +1,15 @@
 *{
-
 margin:0;
 padding:0;
 box-sizing:border-box;
-
 }
-
 
 
 body{
 
-font-family:Arial, Helvetica, sans-serif;
+font-family:Arial,sans-serif;
 
-background:#eaf5f2;
+background:#e8f5f2;
 
 }
 
@@ -24,10 +21,6 @@ max-width:520px;
 
 margin:auto;
 
-background:white;
-
-min-height:100vh;
-
 padding:25px 15px;
 
 text-align:center;
@@ -38,9 +31,9 @@ text-align:center;
 
 .logo{
 
-width:160px;
+width:150px;
 
-height:160px;
+height:150px;
 
 object-fit:contain;
 
@@ -51,30 +44,6 @@ object-fit:contain;
 h1{
 
 color:#00695c;
-
-margin:15px 0 5px;
-
-font-size:28px;
-
-}
-
-
-
-h3{
-
-color:#00695c;
-
-margin:10px;
-
-}
-
-
-
-p{
-
-color:#555;
-
-line-height:1.5;
 
 }
 
@@ -88,13 +57,13 @@ background:#00695c;
 
 color:white;
 
+padding:12px 30px;
+
+border-radius:20px;
+
 font-size:30px;
 
 font-weight:bold;
-
-padding:12px 30px;
-
-border-radius:15px;
 
 margin:20px;
 
@@ -108,21 +77,21 @@ display:flex;
 
 align-items:center;
 
-background:#f8ffff;
-
-color:#00695c;
+gap:15px;
 
 text-decoration:none;
 
-font-weight:bold;
+color:#333;
 
-padding:15px;
+padding:16px;
 
 margin:12px 0;
 
-border-radius:15px;
+border-radius:18px;
 
-box-shadow:0 4px 10px rgba(0,0,0,.12);
+box-shadow:0 5px 12px rgba(0,0,0,.12);
+
+text-align:left;
 
 transition:.3s;
 
@@ -132,11 +101,7 @@ transition:.3s;
 
 .menu a:hover{
 
-background:#00695c;
-
-color:white;
-
-transform:translateY(-3px);
+transform:scale(1.03);
 
 }
 
@@ -144,25 +109,94 @@ transform:translateY(-3px);
 
 .menu span{
 
-font-size:26px;
+font-size:30px;
 
-width:45px;
+}
 
+
+
+.menu div{
+
+font-weight:bold;
+
+}
+
+
+
+small{
+
+display:block;
+
+color:#00897b;
+
+margin-top:5px;
+
+font-size:12px;
+
+}
+
+
+
+/* WARNA MENU */
+
+
+.absensi{
+background:#e8f5e9;
+}
+
+.laporan{
+background:#e3f2fd;
+}
+
+.makanan{
+background:#fff3e0;
+}
+
+.sipgn{
+background:#ede7f6;
+}
+
+.mpm{
+background:#e0f2f1;
+}
+
+.pop{
+background:#fff8e1;
+}
+
+.tauwas{
+background:#ffebee;
+}
+
+.kopra{
+background:#e8eaf6;
+}
+
+.relawan{
+background:#f3e5f5;
+}
+
+.sdmo{
+background:#efebe9;
+}
+
+.bpjs{
+background:#e1f5fe;
 }
 
 
 
 .qris{
 
-margin-top:35px;
-
-background:#f8ffff;
+background:white;
 
 padding:20px;
 
-border-radius:15px;
+margin-top:35px;
 
-box-shadow:0 4px 10px rgba(0,0,0,.12);
+border-radius:20px;
+
+box-shadow:0 5px 15px rgba(0,0,0,.15);
 
 }
 
@@ -171,8 +205,6 @@ box-shadow:0 4px 10px rgba(0,0,0,.12);
 .qris img{
 
 width:230px;
-
-max-width:90%;
 
 margin:15px;
 
@@ -187,25 +219,5 @@ margin-top:30px;
 font-weight:bold;
 
 color:#00695c;
-
-}
-
-
-@media(max-width:600px){
-
-.logo{
-
-width:130px;
-
-height:130px;
-
-}
-
-
-h1{
-
-font-size:22px;
-
-}
 
 }
