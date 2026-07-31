@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 <html lang="id">
-
 <head>
 
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>MBG PORTAL</title>
@@ -12,50 +10,75 @@
 <link rel="stylesheet" href="style.css">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
-
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
 </head>
 
 <body>
 
-<div class="background"></div>
+<div class="container">
 
-<div class="wrapper">
+<div class="left">
 
-<div class="main">
-
-<div class="header">
+<header>
 
 <img src="logo-bgn.png" class="logo">
 
 <h1>MBG PORTAL</h1>
 
-<p>Semua Sistem MBG Dalam Satu Tempat</p>
+<p class="subtitle">
 
-<span>BY : SPPG Plupuh Karangwaru 2</span>
+Semua Sistem MBG Dalam Satu Tempat
+
+</p>
+
+<p class="creator">
+
+BY : SPPG Plupuh Karangwaru 2
+
+</p>
+
+</header>
+
+<div class="searchBox">
+
+<i class="fa-solid fa-magnifying-glass"></i>
 
 <input
-id="search"
 type="text"
-placeholder="🔍 Cari menu...">
+id="search"
+placeholder="Cari menu...">
 
 </div>
 
-<div id="menu"></div>
+<div id="menuContainer">
+
+<!-- Menu dari script.js -->
 
 </div>
 
-<aside class="sidebar">
+<footer>
 
-<div class="donasi">
+MBG PORTAL © 2026
 
-<h2>❤️ Dukung Pengembangan</h2>
+</footer>
+
+</div>
+
+<div class="right">
+
+<div class="donasiCard">
+
+<h2>
+
+❤️ Dukung Pengembangan
+
+</h2>
 
 <p>
 
@@ -65,9 +88,11 @@ Jika bermanfaat silakan support pengembang.
 
 </p>
 
-<img src="qris.png" class="qris">
+<img
+src="qris.png"
+class="qris">
 
-<button id="lihatQR">
+<button id="openQR">
 
 Perbesar QRIS
 
@@ -75,21 +100,25 @@ Perbesar QRIS
 
 </div>
 
-<div class="info">
+<div class="jumlahCard">
 
 <h3>Total Menu</h3>
 
-<h1 id="jumlahMenu">11</h1>
+<h1 id="jumlahMenu">
+
+11
+
+</h1>
 
 </div>
 
-</aside>
+</div>
 
 </div>
 
 <div id="popup">
 
-<div class="popupCard">
+<div class="popupContent">
 
 <span id="close">
 
@@ -118,5 +147,4 @@ Terima kasih atas dukungan Anda ❤️
 <script src="script.js"></script>
 
 </body>
-
 </html>
