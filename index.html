@@ -21,7 +21,7 @@ Portal MBG SPPG Karangwaru 2
 <div class="container">
 
 
-<img class="logo" src="logo.png" alt="Logo BGN">
+<img class="logo" src="logo.png">
 
 
 <h1>
@@ -39,34 +39,11 @@ by : SPPG Plupuh Karangwaru 2
 </p>
 
 
+
 <div id="clock">
 00:00:00
 </div>
 
-
-<script>
-
-function updateClock(){
-
-    const waktu = new Date();
-
-    let jam = String(waktu.getHours()).padStart(2,"0");
-    let menit = String(waktu.getMinutes()).padStart(2,"0");
-    let detik = String(waktu.getSeconds()).padStart(2,"0");
-
-
-    document.getElementById("clock").innerHTML =
-    jam + ":" + menit + ":" + detik;
-
-}
-
-
-updateClock();
-
-setInterval(updateClock,1000);
-
-
-</script>
 
 
 <div class="menu">
@@ -137,7 +114,7 @@ SIPP BPJS Ketenagakerjaan
 QRIS
 </h3>
 
-<img src="qris.png" alt="QRIS">
+<img src="qris.png">
 
 </div>
 
@@ -152,7 +129,31 @@ QRIS
 
 
 
-<script src="script.js"></script>
+<script>
+
+function updateClock(){
+
+    let sekarang = new Date();
+
+    let jam = String(sekarang.getHours()).padStart(2,"0");
+
+    let menit = String(sekarang.getMinutes()).padStart(2,"0");
+
+    let detik = String(sekarang.getSeconds()).padStart(2,"0");
+
+
+    document.getElementById("clock").innerHTML =
+    jam + ":" + menit + ":" + detik;
+
+}
+
+
+updateClock();
+
+setInterval(updateClock,1000);
+
+
+</script>
 
 
 </body>
