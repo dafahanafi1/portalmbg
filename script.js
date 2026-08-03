@@ -1,26 +1,36 @@
-function updateClock() {
+// JAM DIGITAL
 
-    const now = new Date();
+function updateClock(){
 
-    const jam = String(now.getHours()).padStart(2, "0");
-    const menit = String(now.getMinutes()).padStart(2, "0");
-    const detik = String(now.getSeconds()).padStart(2, "0");
+const now = new Date();
 
-    document.getElementById("clock").innerHTML =
-        jam + ":" + menit + ":" + detik;
+let h = String(now.getHours()).padStart(2,'0');
+let m = String(now.getMinutes()).padStart(2,'0');
+let s = String(now.getSeconds()).padStart(2,'0');
+
+document.getElementById("clock").innerHTML = `${h}:${m}:${s}`;
+
 }
 
+setInterval(updateClock,1000);
+
 updateClock();
-setInterval(updateClock, 1000);
 
-function toggleTutorial() {
 
-    const menu = document.getElementById("tutorialMenu");
+// DROPDOWN TUTORIAL
 
-    if (menu.style.display === "block") {
-        menu.style.display = "none";
-    } else {
-        menu.style.display = "block";
-    }
+function toggleTutorial(){
+
+const menu = document.getElementById("tutorialMenu");
+
+if(menu.style.display==="block"){
+
+menu.style.display="none";
+
+}else{
+
+menu.style.display="block";
+
+}
 
 }
