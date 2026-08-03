@@ -9,274 +9,131 @@
 
 <link rel="stylesheet" href="style.css">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
 </head>
 
 <body>
 
 <div class="container">
 
-<div class="header">
-
-<img src="logo.png" class="logo" alt="Logo BGN">
+<img class="logo" src="logo.png" alt="Logo BGN">
 
 <h1>Portal MBG</h1>
 
-<h2>SPPG Karangwaru 2</h2>
+<h3>SPPG Karangwaru 2</h3>
 
 <p>Rangkuman Menu Portal</p>
 
-<span>by SPPG Plupuh Karangwaru 2</span>
-
 <div id="clock">00:00:00</div>
-
-</div>
 
 <!-- ================= MENU OPERASIONAL ================= -->
 
-<div class="kategori">
-
-<div class="judul-kategori">
-📋 MENU OPERASIONAL (SIPGN)
-</div>
+<h2 class="judul">📋 MENU OPERASIONAL</h2>
 
 <a class="menu absensi" href="https://sipgn-siphr.bgn.go.id/" target="_blank">
 <img src="https://cdn-icons-png.flaticon.com/512/2921/2921222.png">
-<div>
-<b>Form ABSENSI KA SPPG, AK, AG, dan Relawan</b>
-<small>Absensi Online</small>
-</div>
+<span>Form ABSENSI KA SPPG, AK, AG, dan Relawan</span>
 </a>
 
 <a class="menu laporan" href="https://sipgn-sipsmo-web.bgn.go.id/Sign" target="_blank">
 <img src="https://cdn-icons-png.flaticon.com/512/2991/2991112.png">
-<div>
-<b>Laporan DIALUR / SMO</b>
-<small>Pelaporan Operasional</small>
-</div>
+<span>Laporan DIALUR / SMO</span>
 </a>
 
-<a class="menu makanan" href="https://pm-sipgn.bgn.go.id/auth/login" target="_blank">
+<a class="menu pic" href="https://pm-sipgn.bgn.go.id/auth/login" target="_blank">
 <img src="https://cdn-icons-png.flaticon.com/512/1046/1046784.png">
-<div>
-<b>PIC Organoleptik</b>
-<small>Monitoring Organoleptik</small>
-</div>
+<span>PIC Organoleptik</span>
 </a>
 
 <a class="menu sipgn" href="https://sipgn.bgn.go.id/public" target="_blank">
 <img src="https://cdn-icons-png.flaticon.com/512/2906/2906274.png">
-<div>
-<b>SIPGN KA AK AG</b>
-<small>Sistem SIPGN</small>
-</div>
+<span>SIPGN KA AK AG</span>
 </a>
 
 <a class="menu mpm" href="https://mpm-sipgn.bgn.go.id/" target="_blank">
 <img src="https://cdn-icons-png.flaticon.com/512/1077/1077114.png">
-<div>
-<b>Manajemen Penerima Manfaat</b>
-<small>Data Penerima Manfaat</small>
-</div>
+<span>Manajemen Penerima Manfaat</span>
 </a>
 
 <a class="menu pop" href="https://pop-sipgn.bgn.go.id/" target="_blank">
 <img src="https://cdn-icons-png.flaticon.com/512/2961/2961948.png">
-<div>
-<b>POP Khusus Asisten Lapangan</b>
-<small>Portal Aslap</small>
-</div>
+<span>POP Khusus Asisten Lapangan</span>
 </a>
 
-</div>
+<!-- ================= TUTORIAL ================= -->
 
-<!-- ================= PUSAT PEMBELAJARAN ================= -->
+<h2 class="judul">📚 PUSAT PEMBELAJARAN</h2>
 
-<div class="kategori">
-
-<div class="judul-kategori">
-📚 PUSAT PEMBELAJARAN (TUTORIAL SIPGN)
-</div>
-
-<button class="accordion" onclick="toggleTutorial()">
+<button class="dropdown" onclick="toggleTutorial()">
 📖 Tutorial Penggunaan SIPGN ▼
 </button>
 
 <div id="tutorialMenu" class="submenu">
 
-<a href="https://drive.google.com/drive/folders/1QtSTcpMBD_tqZzP8GqPjbBR9T8MEMxbS" target="_blank">
-📄 Materi SIPHR
-</a>
+<a href="https://drive.google.com/drive/folders/1QtSTcpMBD_tqZzP8GqPjbBR9T8MEMxbS" target="_blank">Materi SIPHR</a>
 
-<a href="https://drive.google.com/drive/folders/1e-qIdenKWZS9NENSfC72Tp2WHbr3zNRo" target="_blank">
-📄 Materi MPM (KA SPPG)
-</a>
+<a href="https://drive.google.com/drive/folders/1e-qIdenKWZS9NENSfC72Tp2WHbr3zNRo" target="_blank">Materi MPM (KA SPPG)</a>
 
-<a href="https://drive.google.com/drive/folders/19SVzB_LgU7iJGGW-nzps76MAINy3emlN" target="_blank">
-📄 Materi PIC (Organoleptik Online)
-</a>
+<a href="https://drive.google.com/drive/folders/19SVzB_LgU7iJGGW-nzps76MAINy3emlN" target="_blank">Materi PIC Organoleptik</a>
 
-<a href="https://drive.google.com/drive/folders/1sXqQAha_JBOzm0s9m_3wT7EQgAXogR4D" target="_blank">
-📄 Materi POP ASLAP
-</a>
+<a href="https://drive.google.com/drive/folders/1sXqQAha_JBOzm0s9m_3wT7EQgAXogR4D" target="_blank">Materi POP ASLAP</a>
 
-<a href="https://drive.google.com/drive/folders/1AU-bp11cVUCnACfnnSsZDRNs-zsHTPzt" target="_blank">
-📄 Materi SCM (Akuntan)
-</a>
+<a href="https://drive.google.com/drive/folders/1AU-bp11cVUCnACfnnSsZDRNs-zsHTPzt" target="_blank">Materi SCM (Akuntan)</a>
 
-<a href="https://drive.google.com/drive/folders/1YTfcz_26wGp1h5Va-9SSEVzgpI-WlKy_" target="_blank">
-📄 Materi MENU Planner (Ahli Gizi)
-</a>
-
-</div>
+<a href="https://drive.google.com/drive/folders/1YTfcz_26wGp1h5Va-9SSEVzgpI-WlKy_?usp=sharing" target="_blank">Materi MENU Planner</a>
 
 </div>
 
 <!-- ================= MENU KEUANGAN ================= -->
 
-<div class="kategori">
-
-<div class="judul-kategori">
-🏦 MENU KEUANGAN (MAKER & APPROVAL)
-</div>
+<h2 class="judul">🏦 MENU KEUANGAN</h2>
 <a class="menu kopra" href="https://koprabymandiri.com/" target="_blank">
-
-    <img src="https://cdn-icons-png.flaticon.com/512/2830/2830289.png" alt="Mandiri">
-
-    <div>
-        <b>Mandiri Kopra</b>
-        <small>Internet Banking</small>
-    </div>
-
+<img src="https://cdn-icons-png.flaticon.com/512/2830/2830289.png">
+<span>Mandiri Kopra</span>
 </a>
 
 <a class="menu bri" href="https://qlolabybri.com/v2/landing-page" target="_blank">
-
-    <img src="https://cdn-icons-png.flaticon.com/512/5968/5968260.png" alt="BRI">
-
-    <div>
-        <b>BRI Qlola</b>
-        <small>Cash Management</small>
-    </div>
-
+<img src="https://cdn-icons-png.flaticon.com/512/5968/5968260.png">
+<span>BRI Qlola</span>
 </a>
 
 <a class="menu bni" href="https://bnidirect.bni.co.id/" target="_blank">
-
-    <img src="https://cdn-icons-png.flaticon.com/512/5968/5968144.png" alt="BNI">
-
-    <div>
-        <b>BNI Direct</b>
-        <small>Cash Management</small>
-    </div>
-
+<img src="https://cdn-icons-png.flaticon.com/512/5968/5968144.png">
+<span>BNI Direct</span>
 </a>
 
 <a class="menu btn" href="https://cashmanagement.btn.co.id/" target="_blank">
-
-    <img src="https://cdn-icons-png.flaticon.com/512/5968/5968144.png" alt="BTN">
-
-    <div>
-        <b>BTN Cash Management</b>
-        <small>Cash Management</small>
-    </div>
-
+<img src="https://cdn-icons-png.flaticon.com/512/5968/5968144.png">
+<span>BTN Cash Management</span>
 </a>
 
-</div>
+<!-- ================= SDM ================= -->
 
-<!-- ================= SDM & ADMINISTRASI ================= -->
+<h2 class="judul">👥 SDM & ADMINISTRASI</h2>
 
-<div class="kategori">
-
-    <div class="judul-kategori">
-        👥 SDM & ADMINISTRASI (LAYANAN PENDUKUNG)
-    </div>
-    <a class="menu juknis"
-href="https://drive.google.com/drive/folders/1o37K00AZyRWKB8n6aU0HXlLsj9FbP6Wk?usp=sharing"
-target="_blank">
-
-<img src="https://cdn-icons-png.flaticon.com/512/2991/2991112.png" alt="JUKNIS">
-
-<div>
-
-<b>JUKNIS DAN SE</b>
-
-<small>Dokumen Resmi</small>
-
-</div>
-
+<a class="menu juknis" href="https://drive.google.com/drive/folders/1o37K00AZyRWKB8n6aU0HXlLsj9FbP6Wk?usp=sharing" target="_blank">
+<img src="https://cdn-icons-png.flaticon.com/512/2991/2991112.png">
+<span>JUKNIS dan SE</span>
 </a>
 
-<a class="menu tauwas"
-href="https://tauwascare.tauwas.bgn.go.id/login"
-target="_blank">
-
-<img src="https://cdn-icons-png.flaticon.com/512/1828/1828640.png" alt="Tauwas">
-
-<div>
-
-<b>Tauwas Care</b>
-
-<small>Portal Tauwas</small>
-
-</div>
-
+<a class="menu tauwas" href="https://tauwascare.tauwas.bgn.go.id/login" target="_blank">
+<img src="https://cdn-icons-png.flaticon.com/512/1828/1828640.png">
+<span>Tauwas Care</span>
 </a>
 
-<a class="menu relawan"
-href="https://sipgn-siphr.bgn.go.id/sign-in?callbackUrl=https%3A%2F%2Fsipgn-siphr.bgn.go.id%2Fmanajemen-tenaga-kerja%2Fkitchen-employees"
-target="_blank">
-
-<img src="https://cdn-icons-png.flaticon.com/512/942/942748.png" alt="Relawan">
-
-<div>
-
-<b>Tambah Relawan Absensi Online</b>
-
-<small>Manajemen Relawan</small>
-
-</div>
-
+<a class="menu relawan" href="https://sipgn-siphr.bgn.go.id/sign-in?callbackUrl=https%3A%2F%2Fsipgn-siphr.bgn.go.id%2Fmanajemen-tenaga-kerja%2Fkitchen-employees" target="_blank">
+<img src="https://cdn-icons-png.flaticon.com/512/942/942748.png">
+<span>Tambah Relawan Absensi Online</span>
 </a>
 
-<a class="menu sdmo"
-href="https://birosdmo.bgn.go.id/login"
-target="_blank">
-
-<img src="https://cdn-icons-png.flaticon.com/512/3094/3094837.png" alt="SDMO">
-
-<div>
-
-<b>Biro SDMO BGN</b>
-
-<small>SDM Online</small>
-
-</div>
-
+<a class="menu sdmo" href="https://birosdmo.bgn.go.id/login" target="_blank">
+<img src="https://cdn-icons-png.flaticon.com/512/3094/3094837.png">
+<span>Biro SDMO BGN</span>
 </a>
 
-<a class="menu bpjs"
-href="https://sipp.bpjsketenagakerjaan.go.id/"
-target="_blank">
-
-<img src="https://cdn-icons-png.flaticon.com/512/3135/3135673.png" alt="BPJS">
-
-<div>
-
-<b>SIPP BPJS Ketenagakerjaan</b>
-
-<small>BPJS Online</small>
-
-</div>
-
+<a class="menu bpjs" href="https://sipp.bpjsketenagakerjaan.go.id/" target="_blank">
+<img src="https://cdn-icons-png.flaticon.com/512/3135/3135673.png">
+<span>SIPP BPJS Ketenagakerjaan</span>
 </a>
-
-</div>
 
 <!-- ================= QRIS ================= -->
 
@@ -284,25 +141,17 @@ target="_blank">
 
 <h2>QRIS Dukungan SPPG</h2>
 
-<p>
-Partisipasi dan dukungan untuk kelancaran bisa melalui QRIS.
-</p>
+<p>Partisipasi dan dukungan untuk kelancaran operasional dapat melalui QRIS.</p>
 
 <img src="qris.png" alt="QRIS">
 
-<p>
-
-Terima kasih atas dukungan Anda.<br>
-
-Semoga menjadi keberkahan dan manfaat bersama.
-
-</p>
+<p>Terima kasih atas dukungan Anda 🙏</p>
 
 </div>
 
 <div class="footer">
 
-#DHAF
+© 2026 Portal MBG • SPPG Karangwaru 2
 
 </div>
 
@@ -311,5 +160,4 @@ Semoga menjadi keberkahan dan manfaat bersama.
 <script src="script.js"></script>
 
 </body>
-
 </html>
