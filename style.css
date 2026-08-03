@@ -1,3 +1,7 @@
+/* ===============================
+   RESET
+================================ */
+
 *{
     margin:0;
     padding:0;
@@ -5,210 +9,423 @@
 }
 
 body{
-    font-family:Arial,sans-serif;
-    background:linear-gradient(180deg,#0066b3,#004d8f);
-    padding:20px;
+
+    font-family:'Poppins',Arial,sans-serif;
+
+    min-height:100vh;
+
+    background:
+    linear-gradient(
+        180deg,
+        #0b66b3,
+        #004d8f
+    );
+
+    padding:20px 10px;
+
 }
+
+
+/* ===============================
+   CONTAINER
+================================ */
 
 .container{
-    max-width:560px;
+
+    width:100%;
+
+    max-width:520px;
+
     margin:auto;
-    background:#fff;
-    border-radius:25px;
-    padding:25px;
-    box-shadow:0 10px 25px rgba(0,0,0,.2);
+
+    text-align:center;
+
 }
+
+
+
+/* ===============================
+   LOGO HEADER
+================================ */
 
 .logo{
-    width:120px;
-    display:block;
-    margin:0 auto 15px;
+
+    width:100px;
+
+    height:100px;
+
+    object-fit:contain;
+
+    margin-bottom:12px;
+
 }
+
+
+/* JUDUL */
 
 h1{
-    text-align:center;
-    color:#005baa;
-    font-size:36px;
+
+    color:white;
+
+    font-size:28px;
+
+    font-weight:700;
+
 }
+
 
 h3{
-    text-align:center;
-    color:#1976d2;
-    margin-top:5px;
+
+    color:white;
+
+    font-size:20px;
+
+    margin-bottom:5px;
+
 }
 
-.container>p{
-    text-align:center;
-    color:#666;
-    margin-top:8px;
+
+.container > p{
+
+    color:#eaf6ff;
+
+    font-size:14px;
+
 }
+
+
+
+/* ===============================
+   JAM DIGITAL
+================================ */
 
 #clock{
-    display:block;
+
+    margin:15px auto 20px;
+
+    background:white;
+
     width:max-content;
-    margin:20px auto;
-    background:#005baa;
-    color:#fff;
-    padding:12px 28px;
-    border-radius:15px;
-    font-size:30px;
+
+    padding:8px 18px;
+
+    border-radius:20px;
+
     font-weight:bold;
+
+    color:#00529b;
+
+    box-shadow:0 5px 15px #0003;
+
 }
+
+
+
+/* ===============================
+   JUDUL MENU
+================================ */
 
 .judul{
-    margin:28px 0 15px;
-    color:#005baa;
-    font-size:22px;
+
+    margin:22px 0 12px;
+
+    color:white;
+
+    font-size:18px;
+
+    text-align:left;
+
 }
+
+
+
+/* ===============================
+   MENU BUTTON
+================================ */
 
 .menu{
+
     display:flex;
+
     align-items:center;
-    gap:15px;
-    text-decoration:none;
-    color:#222;
-    padding:15px;
-    margin-bottom:12px;
+
+    width:100%;
+
+    min-height:70px;
+
+    background:white;
+
+    margin-bottom:14px;
+
+    padding:12px;
+
     border-radius:18px;
-    box-shadow:0 5px 15px rgba(0,0,0,.12);
-    transition:.25s;
+
+    text-decoration:none;
+
+    color:#333;
+
+    font-weight:600;
+
+    box-shadow:
+
+    0 8px 18px rgba(0,0,0,.18);
+
+    transition:.3s;
+
 }
+
+
 
 .menu:hover{
+
     transform:translateY(-3px);
+
 }
+
+
+
+/* ICON MENU */
 
 .menu img{
-    width:52px;
-    height:52px;
-    background:#fff;
-    border-radius:50%;
-    padding:8px;
+
+    width:45px;
+
+    height:45px;
+
+    object-fit:contain;
+
+    margin-right:15px;
+
 }
+
+
+
+/* TEXT */
 
 .menu span{
-    font-size:18px;
-    font-weight:bold;
+
+    text-align:left;
+
+    font-size:14px;
+
 }
 
-/* Warna */
 
-.absensi{background:#dcedc8;}
-.laporan{background:#bbdefb;}
-.pic{background:#ffe0b2;}
-.sipgn{background:#e1bee7;}
-.mpm{background:#b2dfdb;}
-.pop{background:#fff59d;}
 
-.kopra{background:#c5cae9;}
-.bri{background:#ffe082;}
-.bni{background:#ffccbc;}
-.btn{background:#c8e6c9;}
+/* ===============================
+   WARNA MENU
+================================ */
 
-.juknis{background:#d1c4e9;}
-.tauwas{background:#ffcdd2;}
-.relawan{background:#f8bbd0;}
-.sdmo{background:#d7ccc8;}
-.bpjs{background:#b3e5fc;}
+
+.absensi{
+    border-left:8px solid #00a8ff;
+}
+
+.laporan{
+    border-left:8px solid #ff9800;
+}
+
+.pic{
+    border-left:8px solid #4caf50;
+}
+
+.sipgn{
+    border-left:8px solid #9c27b0;
+}
+
+.mpm{
+    border-left:8px solid #e91e63;
+}
+
+.pop{
+    border-left:8px solid #009688;
+}
+
+.kopra{
+    border-left:8px solid #673ab7;
+}
+
+.bri{
+    border-left:8px solid #0066cc;
+}
+
+.bni{
+    border-left:8px solid #f57c00;
+}
+
+.btn{
+    border-left:8px solid #795548;
+}
+
+.juknis{
+    border-left:8px solid #607d8b;
+}
+
+.tauwas{
+    border-left:8px solid #03a9f4;
+}
+
+.relawan{
+    border-left:8px solid #8bc34a;
+}
+
+.sdmo{
+    border-left:8px solid #ff5722;
+}
+
+.bpjs{
+    border-left:8px solid #2196f3;
+}
+
+
+
+/* ===============================
+   TUTORIAL DROPDOWN
+================================ */
 
 .dropdown{
+
     width:100%;
-    padding:14px;
+
+    padding:15px;
+
     border:none;
-    border-radius:15px;
-    background:#1565c0;
-    color:#fff;
-    font-size:16px;
+
+    border-radius:18px;
+
+    background:white;
+
+    font-size:15px;
+
     font-weight:bold;
+
     cursor:pointer;
-    margin-bottom:10px;
+
+    box-shadow:0 8px 18px #0003;
+
 }
+
+
 
 .submenu{
+
     display:none;
-    margin-bottom:20px;
+
+    margin-top:10px;
+
 }
+
+
 
 .submenu a{
+
     display:block;
-    padding:12px 15px;
-    margin:8px 0;
-    background:#eef6ff;
-    border-left:5px solid #1565c0;
-    border-radius:10px;
+
+    background:#ffffffdd;
+
+    padding:12px;
+
+    margin-bottom:8px;
+
+    border-radius:12px;
+
     text-decoration:none;
-    color:#333;
-    font-weight:bold;
+
+    color:#004d8f;
+
+    font-size:14px;
+
 }
 
-.submenu a:hover{
-    background:#d7ebff;
-}
+
+
+/* ===============================
+   QRIS
+================================ */
 
 .qris{
-    margin-top:30px;
-    background:#fafafa;
-    border-radius:20px;
+
+    background:white;
+
+    margin-top:25px;
+
     padding:20px;
-    text-align:center;
-    box-shadow:0 5px 15px rgba(0,0,0,.12);
+
+    border-radius:20px;
+
+    box-shadow:0 8px 20px #0003;
+
 }
+
 
 .qris h2{
-    color:#005baa;
+
+    font-size:18px;
+
+    color:#004d8f;
+
 }
+
 
 .qris p{
-    margin-top:10px;
-    color:#666;
+
+    font-size:13px;
+
+    margin:10px 0;
+
 }
+
+
 
 .qris img{
-    width:220px;
-    display:block;
-    margin:15px auto;
+
+    width:180px;
+
+    max-width:80%;
+
 }
+
+
+
+/* ===============================
+   FOOTER
+================================ */
+
 
 .footer{
+
+    color:white;
+
+    font-size:12px;
+
     margin-top:25px;
-    text-align:center;
-    color:#005baa;
-    font-weight:bold;
+
+    padding-bottom:20px;
+
 }
 
-@media(max-width:600px){
 
-body{
-    padding:10px;
-}
 
-.container{
-    padding:18px;
-}
+/* ===============================
+   HP
+================================ */
 
-.logo{
-    width:100px;
-}
+@media(max-width:480px){
 
-h1{
-    font-size:28px;
-}
+    h1{
+        font-size:24px;
+    }
 
-h3{
-    font-size:20px;
-}
 
-#clock{
-    font-size:24px;
-}
+    .menu span{
+        font-size:13px;
+    }
 
-.menu img{
-    width:45px;
-    height:45px;
-}
 
-.menu span{
-    font-size:16px;
-}
+    .menu img{
+        width:40px;
+        height:40px;
+    }
 
 }
